@@ -1,7 +1,7 @@
 # Microeconometrics for modeling individual level actions
 
-**Published:** 2025-01-20
-**Medium:** [https://medium.com/@kyle-t-jones/microeconometrics-for-modeling-individual-level-actions-fa5905da7137](https://medium.com/@kyle-t-jones/microeconometrics-for-modeling-individual-level-actions-fa5905da7137)
+Published: 2025-01-20
+Medium: [https://medium.com/@kyle-t-jones/microeconometrics-for-modeling-individual-level-actions-fa5905da7137](https://medium.com/@kyle-t-jones/microeconometrics-for-modeling-individual-level-actions-fa5905da7137)
 
 ## About
 

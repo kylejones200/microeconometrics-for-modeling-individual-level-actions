@@ -14,7 +14,7 @@ Microeconometrics is a subfield of econometrics focused on the analysis of indiv
 Macroeconomics deals with aggregated data (e.g., GDP, inflation); microeconomics focuses on individual-level units, such as a person's income, a household's spending habits, or a firm's production decisions. This more focused lens lets us look at heterogeneity (how individuals differ in behavior or preferences), causal relationships (e.g., the effect of education on earnings), and granular policy insights.
 
 ### Software Tools for Microeconometrics
-You need software to do microeconometric analysis. I generally use **Python** with`statsmodels`, `scikit-learn`, and `linearmodels` . But you can also use **R** with `plm`, `AER`, and `caret` . Or **Stata** which is often used for econometric modeling in academia and policy research. The examples below are all in Python.
+You need software to do microeconometric analysis. I generally use Python with`statsmodels`, `scikit-learn`, and `linearmodels` . But you can also use R with `plm`, `AER`, and `caret` . Or Stata which is often used for econometric modeling in academia and policy research. The examples below are all in Python.
 
 ### Linear Regression
 Linear regression is the cornerstone of econometric analysis. It models the relationship between a dependent variable Y and one or more independent variables X.
@@ -51,8 +51,8 @@ Note, I really like `statsmodels` for regression but you have to use make sure t
 ### Panel Data Methods
 Panel data consists of observations on the same entities (e.g., individuals, firms) over time. This structure allows for analysis of dynamics and unobserved heterogeneity. Two common models are:
 
-- **Fixed Effects (FE):** Controls for time-invariant characteristics by differencing or demeaning.
-- **Random Effects (RE):** Assumes that unobserved individual effects are uncorrelated with explanatory variables.
+- Fixed Effects (FE): Controls for time-invariant characteristics by differencing or demeaning.
+- Random Effects (RE): Assumes that unobserved individual effects are uncorrelated with explanatory variables.
 
 ```python
 from linearmodels.panel import PanelOLS
@@ -74,7 +74,7 @@ print(res)
 
 
 ### Instrumental Variables (IV)
-When explanatory variables are endogenous (correlated with the error term), IV methods provide consistent estimators. An instrument Z must have **relevance** (Z is correlated with the endogenous variable X) and **exogeneity** (Z is uncorrelated with the error term ϵ).
+When explanatory variables are endogenous (correlated with the error term), IV methods provide consistent estimators. An instrument Z must have relevance (Z is correlated with the endogenous variable X) and exogeneity (Z is uncorrelated with the error term ϵ).
 
 IV methods are used to estimate causal effects, such as the impact of health insurance on medical expenses.
 
@@ -103,7 +103,7 @@ print(res)
 
 
 ### Discrete Choice Models
-Discrete choice models analyze decisions with categorical outcomes (e.g., buy/not buy, choose brand A/B/C). Two popular models are **Logit** and **Probit.**
+Discrete choice models analyze decisions with categorical outcomes (e.g., buy/not buy, choose brand A/B/C). Two popular models are Logit and Probit.
 
 ```python
 from statsmodels.discrete.discrete_model import Logit
@@ -125,7 +125,7 @@ print(model.summary())
 
 
 ### Models for Limited Dependent Variables
-These models handle cases where the dependent variable has restrictions, such as being censored, truncated, or bounded. **Tobit Models** are used for censored data (e.g., income reported as ≥ \$100,000) and the **Heckman Selection Model** is used if you need to correct for selection bias when data is non-randomly selected.
+These models handle cases where the dependent variable has restrictions, such as being censored, truncated, or bounded. Tobit Models are used for censored data (e.g., income reported as ≥ \$100,000) and the Heckman Selection Model is used if you need to correct for selection bias when data is non-randomly selected.
 
 ```python
 import statsmodels.api as sm
