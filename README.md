@@ -11,14 +11,7 @@ Macroeconomics deals with aggregated data (e.g., GDP, inflation); microeconomics
 
 You need software to do microeconometric analysis. I generally use Python with`statsmodels`, `scikit-learn`, and `linearmodels` . But you can also use R with `plm`, `AER`, and `caret` . Or Stata which is often used for econometric modeling in academia and policy research. The examples below are all in Python.
 
-## About
 
-Place the code for this article in this repository.
-The original article export is saved as `article.md`.
-
-## Files
-
-Add your `.ipynb`, `.py`, `.yaml`, `.js`, `.ts`, or other project files here.
 
 ## Disclaimer
 
